@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h2>Employee Form</h2>
+            </div>
+            <div class="panel-body">
+                <form method="POST" action="#">
+                    <div class="form-group">
+                        <label for="Sno">Serial Number</label>
+                        <input value="23416578" id="Sno" name="Sno" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="fname">FirstName</label>
+                        <input placeholder="FirstName" id="fname" name="fname" class="form-control" required>
+                    </div>
+                    <div>
+                        <label for="lname">LastName</label>
+                        <input placeholder="LastName" id="lname" name="lname" class="form-control">
+                    </div>
+                    <div>
+                        <label for="Pno">Phone Number</label>
+                        <input placeholder="Phone Number" id="Pno" name="Pno" class="form-control" type="number" maxlength="10">
+                    </div>
+                    <!--In one line i.e in-line elements-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+                            <input placeholder="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password">Password</label>
+                            <input placeholder="password" id="password" name="password" class="form-control"
+                                type="password">
+                        </div>
+
+                    </div>
+              
+
+                <br />
+                <!--Radio button-->
+                <div>
+                    <label>Gender</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender"> Female
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender"> Male
+                    </label>
+                </div>
+
+                <!--Checkbox option-->
+                <div>
+                    <div class="checkout">
+                        <input type="checkbox" value="Node" > Node
+                    </div>
+                    <div class="checkout">
+                        <input type="checkbox" value="JavaScript"> JavaScript
+                    </div>
+                    <div class="checkout">
+                        <input type="checkbox" value="React"> React
+                    </div>
+                    <div class="checkout">
+                        <input type="checkbox" value="Angular"> Angular
+                    </div>
+                </div>
+                <br/>
+
+                <!--Select option-->
+                <div class="form-group">
+                    <label for="city">Select City</label>
+                    <select class="form-control" id="city">
+                        <option value="Florida">Florida</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Los Angles">Los Angles</option>
+                    </select>
+
+                </div>
+                <!--Auto suggestion option-->
+                <input list="cars" name="car" id="car">
+                <datalist id="cars">
+                    <option value="Nissan"></option>
+                    <option value="Honda"></option>
+                    <option value="BMW"></option>
+                    <option value="Audi"></option>
+                    <option value="Cooper"></option>
+                    <option value="Tesla"></option>
+
+                </datalist>
+                <br/>
+                <br/>
+                <div>
+                    <button class="btn btn-success" type="submit">
+                        submit
+                    </button>
+                    <button class="btn btn-warning" type="reset">
+                        reset
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>
